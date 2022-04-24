@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="C:\Users\Phinyo\Desktop\Bootstrap\css\Style.css">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="/public/js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/public/css/Style.css">
 </head>
 <body>
 
@@ -23,8 +23,7 @@
      
     <div class="text-center">
     <form>
-        <img src="photo/Login.jpg" height="200" >
-    </form>
+        <img src="../public/img/Login.jpg" height="200" >
     </div>
     <br>
         <h1 class="text-center text-uppercase">Sign in Accounts</h1>
@@ -36,19 +35,19 @@
             <div class="text-start">
                 <label class="form-label" for="usernameX"><p class="text-uppercase h3">username</p></label>
             </div>
-                <input type="username" id="typeusernameX" class="form-control form-control-lg" />
+                <input type="username" id="typeUsername" class="form-control form-control-lg" />
         </div>
 
         <div class="form-outline form-white mb-2">
             <div class="text-start">
                 <label class="form-label" for="typePasswordX"></label><p class="text-uppercase h3">Password</p></label>
             </div> 
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <input type="password" id="typePassword" class="form-control form-control-lg" />
                 
         </div><br><br>   
 
         
-        <button class="text-uppercase btn btn-lg btn-primary px-5" type="submit"><p class="text-uppercase h3">Sign in</p></button>
+        <button class="text-uppercase btn btn-lg btn-primary px-5" id="btn-login" type="submit"><p class="text-uppercase h3">Sign in</p></button>
         <br><br>
         <div>
             <p class="text-uppercase mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>      
@@ -60,6 +59,8 @@
             <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
         </div>
     </div>
+    </form>
+    
 </div>
 </div>   
 </div>
@@ -69,3 +70,24 @@
     
 </body>
 </html>
+
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var Feature = (function(){
+        
+        return {
+            init: function(){
+
+            },
+            onSubmitLogin: function(){
+                $("#typeUsername").val;
+                $("#typePassword").val;
+            },
+        }
+    })();
+
+    jQuery(document).ready(function(){
+        Feature.onSubmitLogin();
+    });
+</script>
