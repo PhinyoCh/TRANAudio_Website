@@ -18,7 +18,7 @@ const Home = () => {
                               <img src="https://icon-library.com/images/icon-account/icon-account-12.jpg" height="50"></img>
                             </Form.Group>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label className="text-white fw-bolder">USERNAME</Form.Label>
+                                <Form.Label className="text-white fw-bolder">ADSA</Form.Label>
                                 <Form.Control type="email" placeholder="Enter Username" />
                             </Form.Group>
                                                        

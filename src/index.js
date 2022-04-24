@@ -4,9 +4,9 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './Login.js'
-import Profile from './Profile.js'
-import Home from './Home.js'
+import Login from './components/Login/Login.js'
+import Profile from './components/Profile/Profile.js'
+import Home from './components/Home/Home.js'
 
 ReactDOM.render(
   <BrowserRouter>
