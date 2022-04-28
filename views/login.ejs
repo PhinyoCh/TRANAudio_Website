@@ -3,71 +3,48 @@
 <head>
     <title>Wireless audio transmitted systems</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="/public/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="/public/js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/public/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/public/css/Style.css">
 </head>
 <body>
 
     <section class="vh-100 gradient-custom">
-    <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-    <div class="col-100 col-md-50 col-lg-50 col-xl-10">
-    <div class="card bg-dark text-white" style="border-radius: 1rem;">
-        <br><br>
-    <h2 class=" display-5 text-center ">ระบบเสียงตามสายไร้สาย<br>Wireless audio transmitted systems</h2><hr>
-    <br>
-     
-    <div class="text-center">
-    <form>
-        <img src="../public/img/Login.jpg" height="200" >
-    </div>
-    <br>
-        <h1 class="text-center text-uppercase">Sign in Accounts</h1>
-        <p class="text-center text-uppercase text-white-50 mb-1 ">Please enter your signin and password!!</p>
-        
-
-        <div class="card-body p-5 text-center">
-        <div class="form-outline form-white mb-2">
-            <div class="text-start">
-                <label class="form-label" for="usernameX"><p class="text-uppercase h3">username</p></label>
-            </div>
-                <input type="username" id="typeUsername" class="form-control form-control-lg" />
+        <div class="container">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-100 col-md-50 col-lg-50 col-xl-10">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                            <h5 class=" display-6 text-center ">ระบบเสียงตามสายไร้สาย<br>Wireless audio transmitted systems</h5>
+                        </div>
+                        <div class="card-body bg-dark p- text-center"  style="border-radius: 1rem;">
+                            <div class="text-center">
+                                <img src="../public/img/Login.jpg" height="90">
+                            </div>
+                            <h3 class="text-center text-uppercase text-white">Sign in Accounts</h3>
+                            <p class="text-center text-uppercase text-white-50 ">Please enter your signin and password!!</p>
+                            <form >
+                                <div class="form-outline form-row form-white card-body p-1 text-start text-white ">
+                                    <label class="form-label" for="usernameX"><p class="text-uppercase h5 mb-0">username</p></label>
+                                    <input type="username" id="typeUsername" class="form-control form-control-lg" placeholder="Username"/>
+                                </div>
+                                <div class="form-outline mb-4 form-row form-white card-body p-1 text-start text-white">
+                                    <label class="form-label" for="passwordX"><p class="text-uppercase h5 mt-2 mb-0">password</p></label>
+                                    <input type="username" id="typePassword" class="form-control form-control-lg" placeholder="Password"/>
+                                </div>
+                                <button class="text-uppercase btn btn-lg btn-primary mt-3 px-5" id="btn-login" type="submit"><p class="text-uppercase h4">Sign in</p></button>
+                                <div>
+                                    <p class="text-uppercase mt-3 text-white">Did you forget your password? <a href="#!" class="text-white-50 fw-bold">Reset Password</a></p>      
+                                </div>
+                            </form>
+                        <div>
+                    </div>
+                </div>            
+            </div>                
         </div>
-
-        <div class="form-outline form-white mb-2">
-            <div class="text-start">
-                <label class="form-label" for="typePasswordX"></label><p class="text-uppercase h3">Password</p></label>
-            </div> 
-                <input type="password" id="typePassword" class="form-control form-control-lg" />
-                
-        </div><br><br>   
-
-        
-        <button class="text-uppercase btn btn-lg btn-primary px-5" id="btn-login" type="submit"><p class="text-uppercase h3">Sign in</p></button>
-        <br><br>
-        <div>
-            <p class="text-uppercase mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>      
-        </div>
-
-        <div class="d-flex justify-content-center text-center mt-4 pt-1">
-            <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-            <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-            <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-        </div>
-    </div>
-    </form>
-    
-</div>
-</div>   
-</div>
-</div>
-</div>
-</section>
-    
+    </section>
 </body>
 </html>
 
