@@ -14,3 +14,9 @@
   font-size: 12px;
   padding: 5px;
 }
+.navbar{
+    border-radius: 20px;
+    padding: 20px; 
+    height: 100px; 
+}
+

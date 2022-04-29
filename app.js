@@ -22,12 +22,14 @@ var indexRoute = require('./routes/indexRoute');
 var loginRoute = require('./routes/loginRoute');
 var addUserRoute = require('./routes/addUserRoute');
 var editUserRoute = require('./routes/editUserRoute');
+var requestRoute = require('./routes/requestRoute');
 
 //Static Routes File
 app.use('/', indexRoute);
 app.use('/login', loginRoute);
 app.use('/adduser', addUserRoute);
 app.use('/edituser', editUserRoute);
+app.use('/request', requestRoute);
 
 
 module.exports = app;
