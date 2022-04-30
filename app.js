@@ -20,16 +20,13 @@ app.listen(config.port,()=> console.info(`[SERVER] Listening on port ${config.po
 //Define Routing Path
 var indexRoute = require('./routes/indexRoute');
 var loginRoute = require('./routes/loginRoute');
-var addUserRoute = require('./routes/addUserRoute');
-var editUserRoute = require('./routes/editUserRoute');
 var requestRoute = require('./routes/requestRoute');
+var adminDashboardRoute = require('./routes/adminDashboardRoute');
 
 //Static Routes File
 app.use('/', indexRoute);
 app.use('/login', loginRoute);
-app.use('/adduser', addUserRoute);
-app.use('/edituser', editUserRoute);
 app.use('/request', requestRoute);
-
+app.use('/dashboard', adminDashboardRoute);
 
 module.exports = app;
