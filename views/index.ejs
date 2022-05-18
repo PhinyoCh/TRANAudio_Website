@@ -6,31 +6,98 @@
               <div class="card-header bg-dark">
                 <h3 class="text-uppercase text-center text-white mt-4">sound control</h3>
               </div>
+              
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-info active">
+                    <input type="radio" name="status" value="all" checked="checked"> All
+                </label>
+                <label class="btn btn-success">
+                    <input type="radio" name="status" value="active"> Active
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="status" value="inactive"> Inactive
+                </label>
+                <label class="btn btn-danger">
+                    <input type="radio" name="status" value="expired"> Expired
+                </label>							
+             
+              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table id="table-room-id" class="table" style="width: 100%">
-                    <thead>
+                    <thead>                     
                       <tr>
                         <th class="text-center">ลำดับ</th>
                         <th class="text-center">เลขห้อง</th>
                         <th class="text-center">ชื่อห้อง</th>
                         <th class="text-center">ชั้น</th>
-                        <th class="text-center">สถานะ</th>
+                        <th class="text-center">Status</th>
+                        <th class="text-center">Action</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <!-- <tr>
+                      
+                      <tr data-status="active">
                         <td class="text-center">1</td>
-                        <td class="text-center">c22</td>
+                        <td class="text-center">C21</td>
                         <td class="text-center">LAB 1</td>
                         <td class="text-center">1</td>
+                        <td class="text-center"><span class="btn btn-success">Active</span></td>
+                        <td class="text-center">
+                          <div class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
+                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
+                            <i class="fa fa-edit"></i></button>
+                          </div>                                                    
+                        </td>
                       </tr>
-                      <tr>
+                      
+                      <tr data-status="inactive">
                         <td class="text-center">2</td>
-                        <td class="text-center">C21</td>
+                        <td class="text-center">C22</td>
                         <td class="text-center">LAB 2</td>
                         <td class="text-center">2</td>
-                      </tr> -->
+                        <td class="text-center"><span class="btn btn-warning">Inactive</span></td>
+                        <td class="text-center">
+                          <div class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
+                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
+                            <i class="fa fa-edit"></i></button>
+                          </div>  
+                          
+                        </td>
+                      </tr> 
+                      
+                      <tr data-status="active">
+                        <td class="text-center">3</td>
+                        <td class="text-center">C23</td>
+                        <td class="text-center">LAB 3</td>
+                        <td class="text-center">3</td>
+                        <td class="text-center"><span class="btn btn-success">Active</span></td>
+                        <td class="text-center">
+                          <div class=" form-switch">
+                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
+                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
+                            <i class="fa fa-edit"></i></button>
+                          </div>                                                  
+                        </td>
+                      </tr> 
+                      
+                      <tr data-status="expired">
+                        <td class="text-center">4</td>
+                        <td class="text-center">C24</td>
+                        <td class="text-center">LAB 4</td>
+                        <td class="text-center">4</td>
+                        <td class="text-center"><span class="btn btn-danger">Expired</span></td>
+                        <td class="text-center">
+                          <div class="form-switch">
+                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
+                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
+                            <i class="fa fa-edit"></i></button>
+                          </div>  
+                          
+                        </td>
+                      </tr> 
                     </tbody>
                   </table>
                 </div>
@@ -78,3 +145,4 @@
       Feature.onSubmitLogin();
   });
 </script>
+
