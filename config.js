@@ -1,8 +1,8 @@
 const config = {};
 
-config.port = 8000; //website port
-config.apiURL = 'http://localhost:3000/'; //service url/port
-config.weburl = 'http://localhost:8000/';
+config.port = 9000; //website port
+config.apiURL = 'http://localhost:5000/'; //service url/port
+config.weburl = 'http://localhost:9000/';
 config.cookie_options = {
     maxAge: 86400 * 1000, // 24 hours
     httpOnly: true, // http only, prevents JavaScript cookie access
