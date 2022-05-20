@@ -1,4 +1,5 @@
 <%- include('./sidebar.ejs')  -%> 
+
     <main class="mt-5 pt-3 ">
       <div class="container-fluid">
           <div class="row">
@@ -6,119 +7,134 @@
               <div class="card-header bg-dark">
                 <h3 class="text-uppercase text-center text-white mt-4">sound control</h3>
               </div>
-              
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-info active">
-                    <input type="radio" name="status" value="all" checked="checked"> All
-                </label>
-                <label class="btn btn-success">
-                    <input type="radio" name="status" value="active"> Active
-                </label>
-                <label class="btn btn-warning">
-                    <input type="radio" name="status" value="inactive"> Inactive
-                </label>
-                <label class="btn btn-danger">
-                    <input type="radio" name="status" value="expired"> Expired
-                </label>							
 
-              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table id="table-room-id" class="table" style="width: 100%">
                     <thead>                     
                       <tr>
-                        <th class="text-center">ลำดับ</th>
-                        <th class="text-center">เลขห้อง</th>
-                        <th class="text-center">ชื่อห้อง</th>
-                        <th class="text-center">ชั้น</th>
-                        <th class="text-center">Status</th>
-                        <th class="text-center">Action</th>
+                        <th class="text-center">NUMBER</th>
+                        <th class="text-center">ROOM NUMBER</th>
+                        <th class="text-center">ROOM NAME</th>
+                        <th class="text-center">FLOOR</th>
+                        <th class="text-center">SRATUS</th>
+                        <th class="text-center">ACTION</th>
+                        <th class="text-center">OPERACTION</th>
                       </tr>
                     </thead>
                     <tbody>
                       
-                      <tr data-status="active">
+                      <tr>
                         <td class="text-center">1</td>
                         <td class="text-center">C21</td>
                         <td class="text-center">LAB 1</td>
                         <td class="text-center">1</td>
                         <td class="text-center"><span class="btn btn-success">Active</span></td>
                         <td class="text-center">
-                          <div class="form-switch">
-                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
-                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
-                            <i class="fa fa-edit"></i></button>
-                          </div>                                                    
+                          <div class="container">
+                            <input id="switch-trigger" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Play" data-offlabel="Puase" data-onstyle="primary" data-offstyle="secondary">                                                  
+                          </div>                                                
                         </td>
+                        <td class="text-center">
+                          <button type="submit" name="edit" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</button>
+                          <button type="submit" name="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                        </td>    
                       </tr>
                       
-                      <tr data-status="inactive">
+                      <tr>
                         <td class="text-center">2</td>
                         <td class="text-center">C22</td>
                         <td class="text-center">LAB 2</td>
                         <td class="text-center">2</td>
                         <td class="text-center"><span class="btn btn-warning">Inactive</span></td>
                         <td class="text-center">
-                          <div class="form-switch">
-                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
-                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
-                            <i class="fa fa-edit"></i></button>
+                          <div class="container">
+                            <input id="switch-trigger" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Play" data-offlabel="Puase" data-onstyle="primary" data-offstyle="secondary">                                                    
                           </div>  
-                          
+                        <td class="text-center">
+                            <button type="submit" name="edit" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</button>
+                            <button type="submit" name="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                        </td>  
                         </td>
                       </tr> 
                       
-                      <tr data-status="active">
+                      <tr>
                         <td class="text-center">3</td>
                         <td class="text-center">C23</td>
                         <td class="text-center">LAB 3</td>
                         <td class="text-center">3</td>
                         <td class="text-center"><span class="btn btn-success">Active</span></td>
                         <td class="text-center">
-                          <div class=" form-switch">
-                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
-                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
-                            <i class="fa fa-edit"></i></button>
-                          </div>                                                  
+                          <div class=" container">
+                            <input id="switch-trigger" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Play" data-offlabel="Puase" data-onstyle="primary" data-offstyle="secondary">                                                  
+                          </div>
+                        <td class="text-center">
+                            <button type="submit" name="edit" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</button>
+                            <button type="submit" name="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                        </td>                                                  
                         </td>
                       </tr> 
                       
-                      <tr data-status="expired">
+                      <tr>
                         <td class="text-center">4</td>
                         <td class="text-center">C24</td>
                         <td class="text-center">LAB 4</td>
                         <td class="text-center">4</td>
                         <td class="text-center"><span class="btn btn-danger">Expired</span></td>
                         <td class="text-center">
-                          <div class="form-switch">
-                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
-                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
-                            <i class="fa fa-edit"></i></button>
-                          </div>                        
-                        </td>
+                          <div class="container">
+                            <input id="switch-trigger" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Play" data-offlabel="Puase" data-onstyle="primary" data-offstyle="secondary">                                                     
+                          </div>
+                        <td class="text-center">
+                            <button type="submit" name="edit" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</button>
+                            <button type="submit" name="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                        </td>                        
+                      </td>
                       </tr> 
 
-                      <tr data-status="expired">
+                      <tr>
                         <td class="text-center">5</td>
                         <td class="text-center">C25</td>
                         <td class="text-center">LAB 5</td>
                         <td class="text-center">5</td>
                         <td class="text-center"><span class="btn btn-danger">Expired</span></td>
                         <td class="text-center">
-                          <div class="form-switch">
-                            <input class="form-check-input" type="checkbox" id="SwitchRadio" checked>                                                   
-                            <button type="submit" name="edit" class="btn btn-indigo btn-sm  ">
-                            <i class="fa fa-edit"></i></button>
-                          </div>                        
+                          <div class="container">
+                            <input id="switch-trigger" type="checkbox" data-toggle="switchbutton" checked data-onlabel="Play" data-offlabel="Puase" data-onstyle="primary" data-offstyle="secondary">                                           
+                          </div>
+                        <td class="text-center">
+                            <button type="submit" name="edit" class="btn btn-primary"><i class="fa fa-edit"></i>Edit</button>
+                            <button type="submit" name="delete" class="btn btn-danger"><i class="fa fa-trash"></i>Delete</button>
+                        </td>                       
                         </td>
-                      </tr> 
-                    </tbody>
+                      </tr>
+
+                      <div class="text-end">
+                       <button class=" btn btn-success" onclick="clickApiOn()">All Play</button>
+                       <button class=" btn btn-danger" onclick="clickApiOff()">All Puase</button>
+                       <button type="submit" name="add" class="btn btn-primary"><i class="bi bi-plus-square"></i>ADD</button> 
+                      </div>
+                    </tbody> 
                   </table>
                 </div>
               </div>
             </div>
           </div>
-      </div>   
+      </div>
+      <br>
+      <div class="container col-md-3 border-center">
+        <select class="form-select" aria-label="Default select example">
+           <option selected>Time Menu</option>
+           <option value="1">Day</option>
+           <option value="2">Week</option>
+           <option value="3">Month</option>
+        </select>
+      </div>
+      <div class="text-center mt-3 ">
+        <button type="submit" name="edit" class="btn btn-warning"><span class="btn-label"><i class="bi bi-music-player"></i></span>MP3</button>
+        <button type="submit" name="delete" class="btn btn-danger"><span class="btn-label"><i class="bi bi-broadcast-pin"></i></span>LIVE</button>
+        <button type="submit" name="delete" class="btn btn-secondary">SELECT</button>
+    </div>   
     </main>
   </body>
 </html>
@@ -133,6 +149,8 @@
 <script src="/public/js/dataTables.bootstrap5.min.js"></script>
 <script src="/public/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
 
 <script>
   var Feature = (function(){
@@ -158,5 +176,15 @@
   jQuery(document).ready(function(){
       Feature.onSubmitLogin();
   });
+
+
+  function clickApiOn() {
+    document.getElementById('switch-trigger').switchButton('on');
+  }
+  function clickApiOff() {
+    document.getElementById('switch-trigger').switchButton('off');
+  }
+  
+
 </script>
 
