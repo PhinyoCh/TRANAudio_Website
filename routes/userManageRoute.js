@@ -10,7 +10,7 @@ router.use(bodyParser.json());
 router.use(cookieParser());
 
 router.get('/', function(req,res,next){
-    res.render('admin_dashboard');
+    res.render('user_manage');
 
 })
 

@@ -21,7 +21,7 @@ app.listen(config.port,()=> console.info(`[SERVER] Listening on port ${config.po
 var indexRoute = require('./routes/indexRoute');
 var loginRoute = require('./routes/loginRoute');
 var requestRoute = require('./routes/requestRoute');
-var adminDashboardRoute = require('./routes/adminDashboardRoute');
+var userManageRoute = require('./routes/userManageRoute');
 var profileRoute = require('./routes/profileRoute');
 var editprofileRoute = require('./routes/editprofileRoute')
 
@@ -29,7 +29,7 @@ var editprofileRoute = require('./routes/editprofileRoute')
 app.use('/', indexRoute);
 app.use('/login', loginRoute);
 app.use('/request', requestRoute);
-app.use('/dashboard', adminDashboardRoute);
+app.use('/usermanage', userManageRoute);
 app.use('/profile', profileRoute);
 app.use('/editprofile', editprofileRoute);
 
